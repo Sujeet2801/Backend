@@ -27,7 +27,7 @@ const PASSWORD = process.env.DB_PASSWORD;
 Connection(USERNAME, PASSWORD);
 
 // Routes
-// app.use('/', Routers)
+app.use('/', Routers)
 
 app.use("/", (req, res) => {
   res.send("Server is running")
