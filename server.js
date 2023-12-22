@@ -29,7 +29,9 @@ Connection(USERNAME, PASSWORD);
 // Routes
 // app.use('/', Routers)
 
-app.get("hellow world")
+app.use("/", (req, res) => {
+  res.send("Server is running")
+})
 
 // Start the server
 app.listen(port, () => {
