@@ -29,9 +29,9 @@ Connection(USERNAME, PASSWORD);
 // Routes
 app.use('/', Routers)
 
-// app.use("/", (req, res) => {
-//   res.send("Server is running")
-// })
+app.use("/", (req, res) => {
+  res.send("Server is running")
+})
 
 // Start the server
 app.listen(port, () => {
