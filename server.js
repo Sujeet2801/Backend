@@ -11,7 +11,7 @@ import Connection from './database/db.js';
 import Routers from './routes/route.js';
 
 const app = express();
-const port = 5000;
+const port = process.env.REACT_APP_BACKEND_URL || 5000;
 
 dotenv.config();
 
