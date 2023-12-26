@@ -11,7 +11,7 @@ import Connection from './database/db.js';
 import Routers from './routes/route.js';
 
 const app = express();
-const port = "https://backend-sujeet2801.vercel.app";
+const port = 5000;
 
 dotenv.config();
 
