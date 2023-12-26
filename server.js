@@ -11,7 +11,7 @@ import Connection from './database/db.js';
 import Routers from './routes/route.js';
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = "https://backend-sujeet2801.vercel.app";
 
 dotenv.config();
 
@@ -29,9 +29,9 @@ Connection(USERNAME, PASSWORD);
 // Routes
 app.use('/', Routers)
 
-app.use("/", (req, res) => {
-  res.send("Server is running")
-})
+// app.use("/", (req, res) => {
+//   res.send("Server is running")
+// })
 
 // Start the server
 app.listen(port, () => {
